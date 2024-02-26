@@ -1,0 +1,45 @@
+.services {
+  &__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+  }
+
+  &__slider-container {
+
+  }
+
+  &__slider-buttons-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__slider-next {
+    cursor: pointer;
+  }
+
+  &__slider-prev {
+    cursor: pointer;
+  }
+
+  &__slide {
+    img {
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+}

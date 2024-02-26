@@ -1,0 +1,18 @@
+.social-media {
+  &__container {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: #F9D41A;
+    border-radius: 10px;
+  }
+}

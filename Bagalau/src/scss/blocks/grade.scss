@@ -1,0 +1,53 @@
+.grade {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  &__header {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 31px;
+    background-color: #D8D8D818;
+    border-radius: 10px;
+  }
+
+  &__button-wrapper {
+
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 17px 66px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    color: #fff;
+  }
+}
+
+.container {
+}
+
+.section-title {
+}

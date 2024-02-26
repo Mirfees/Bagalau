@@ -1,0 +1,21 @@
+.top-menu {
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 20px;
+  }
+
+  &__link {
+    transition: color .1s linear;
+
+    &.active,
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

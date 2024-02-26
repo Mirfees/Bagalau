@@ -1,0 +1,20 @@
+.about {
+  &__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  &__header {
+
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+  }
+}

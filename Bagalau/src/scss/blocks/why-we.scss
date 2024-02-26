@@ -1,0 +1,62 @@
+.why-we {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 108px;
+    padding-bottom: 118px;
+    background-image: url("../img/why-we-bg.png");
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 31.733%);
+    justify-content: center;
+    gap: 26px;
+  }
+
+  &__header {
+  }
+
+  &__title {
+  }
+
+  &__desc {
+  }
+
+  &__card {
+    padding: 50px 50px 74px 50px;
+    background: $primaryColor;
+    border-radius: 26px;
+    background-image: url("../img/why-we-cart-bg.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__card-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -.2px;
+    text-align: center;
+    color: $accentColor;
+    margin-bottom: 20px;
+  }
+
+  &__card-desc {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -.2px;
+    color: #fff;
+  }
+}
