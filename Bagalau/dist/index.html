@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240227145703"/>
-  <link rel="stylesheet" href="css/style.css?_v=20240227145703">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240227161707"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240227161707"/>
+
+  <link rel="stylesheet" href="css/style.css?_v=20240227161707">
 </head>
 <body>
     <section class="header">
@@ -94,11 +96,11 @@
                     <h2 class="services__title section-title"><span>Наши услуги</span></h2>
                     <p class="services__desc plain-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="services__slider-container">
-                    <div class="services__slider-buttons-container">
-                        <div class="services__slider-buttons">
-                            <div class="services__slider-prev"><img src="img/arrow-left.svg" alt=""></div>
-                            <div class="services__slider-next"><img src="img/arrow-right.svg" alt=""></div>
+                <div class="slider services__slider-container">
+                    <div class="slider__buttons-container services__slider-buttons-container">
+                        <div class="slider__buttons services__slider-buttons">
+                            <div class="slider__prev services__slider-prev"><img src="img/arrow-left.svg" alt=""></div>
+                            <div class="slider__next services__slider-next"><img src="img/arrow-right.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="swiper services__slider">
@@ -524,10 +526,43 @@
     </div>
 </section>
 
+    <section class="license">
+    <div class="license__container">
+        <div class="container">
+            <div class="license__header">
+                <h2 class="section-title">Лицензия</h2>
+            </div>
+            <div class="license__slider-buttons-container slider__buttons-container">
+                <div class="license__slider-buttons-container slider__buttons">
+                    <div class="license__slider-prev slider__prev"><img src="img/arrow-left.svg" alt=""></div>
+                    <div class="license__slider-next slider__next"><img src="img/arrow-right.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="license__wrapper">
+        <div class="swiper license__slider">
+            <div class="swiper-wrapper">
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-1.png"><img src="img/license-1.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-2.png"><img src="img/license-2.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-3.png"><img src="img/license-3.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-4.png"><img src="img/license-4.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-5.png"><img src="img/license-5.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-6.png"><img src="img/license-6.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-7.png"><img src="img/license-7.png" alt=""></div>
+                <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-8.png"><img src="img/license-8.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
     <footer class="footer">
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240227145703"></script>
-<script src="js/script.js?_v=20240227145703"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240227161707"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240227161707"></script>
+<script src="js/script.js?_v=20240227161707"></script>
 </body>
 </html>

@@ -291,6 +291,29 @@ ol {
   font-style: normal;
 }
 
+.slider__buttons-container {
+  display: flex;
+  justify-content: end;
+}
+
+.slider__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.slider__prev {
+  cursor: pointer;
+}
+
+.slider__next {
+  cursor: pointer;
+}
+
+.slider__slide img {
+  width: 100%;
+  border-radius: 16px;
+}
+
 .header {
   height: 85px;
 }
@@ -392,6 +415,7 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
+  text-align: center;
 }
 
 .services__title {
@@ -403,26 +427,7 @@ ol {
 }
 
 .services__slider-buttons-container {
-  display: flex;
-  justify-content: end;
-}
-
-.services__slider-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.services__slider-next {
-  cursor: pointer;
-}
-
-.services__slider-prev {
-  cursor: pointer;
-}
-
-.services__slide img {
-  width: 100%;
-  border-radius: 16px;
+  margin-bottom: 30px;
 }
 
 .about__container {
@@ -430,6 +435,7 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
+  text-align: center;
 }
 
 .about__title {
@@ -579,6 +585,8 @@ ol {
   background-color: #F9D41A;
   padding: 9px;
   border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .reasons__card-title {
@@ -619,6 +627,7 @@ ol {
   padding-bottom: 100px;
   background: url("../img/order-grade-bg.png") no-repeat center center;
   background-color: #0C4E8A;
+  box-shadow: 0px 41px 300px -170px rgb(12, 78, 138);
   color: #cedce8;
 }
 
@@ -650,4 +659,29 @@ ol {
 .order-grade__desc {
   font-size: 14px;
   line-height: 22px;
+}
+
+.license__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.license__header {
+  text-align: center;
+}
+
+.license__wrapper {
+  margin-bottom: 150px;
+}
+
+.license__slide {
+  cursor: pointer;
+}
+
+.license .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
 }

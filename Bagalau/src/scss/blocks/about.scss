@@ -1,6 +1,7 @@
 .about {
   &__container {
     @include __container;
+    text-align: center;
   }
 
   &__header {

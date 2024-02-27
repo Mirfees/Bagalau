@@ -1,6 +1,7 @@
 .services {
   &__container {
     @include __container;
+    text-align: center;
   }
 
   &__title {
@@ -16,27 +17,18 @@
   }
 
   &__slider-buttons-container {
-    display: flex;
-    justify-content: end;
+    margin-bottom: 30px;
   }
 
   &__slider-buttons {
-    display: flex;
-    gap: 10px;
   }
 
   &__slider-next {
-    cursor: pointer;
   }
 
   &__slider-prev {
-    cursor: pointer;
   }
 
   &__slide {
-    img {
-      width: 100%;
-      border-radius: 16px;
-    }
   }
 }
