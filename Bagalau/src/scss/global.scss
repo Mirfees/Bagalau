@@ -104,3 +104,13 @@ input::placeholder {
 select {
   color: #888888;
 }
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
