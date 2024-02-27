@@ -153,7 +153,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
 }
 
 .bold-plain-text {
@@ -436,7 +435,11 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
+}
+
+.about__header {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .about__title {
@@ -445,6 +448,45 @@ ol {
 
 .about__desc {
   margin-bottom: 30px;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about__text-block {
+  position: relative;
+}
+
+.about__text-block:before {
+  position: absolute;
+  display: block;
+  left: -28px;
+  top: 30px;
+  content: "";
+  height: 67%;
+  width: 1px;
+  background-color: #cedce8;
+}
+
+.about__row:not(last-child) {
+  margin-bottom: 51px;
+}
+
+.about__text-title {
+  position: relative;
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.about__text-title:before {
+  position: absolute;
+  left: -35px;
+  top: 26px;
+  display: flex;
+  align-items: center;
+  content: url("../img/marker.svg");
 }
 
 .why-we__container {

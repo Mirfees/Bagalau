@@ -1,11 +1,11 @@
 .about {
   &__container {
     @include __container;
-    text-align: center;
   }
 
   &__header {
-
+    text-align: center;
+    margin-bottom: 100px;
   }
 
   &__title {
@@ -14,5 +14,51 @@
 
   &__desc {
     margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__photo-block {
+  }
+
+  &__text-block {
+    position: relative;
+    &:before {
+      position: absolute;
+      display: block;
+      left: -28px;
+      top: 30px;
+      content: "";
+      height: 67%;
+      width: 1px;
+      background-color: #cedce8;
+    }
+  }
+
+  &__row {
+    &:not(last-child) {
+      margin-bottom: 51px;
+    }
+  }
+
+  &__text-title {
+    position: relative;
+    display: flex;
+    margin-bottom: 11px;
+
+    &:before {
+      position: absolute;
+      left: -35px;
+      top: 26px;
+      display: flex;
+      align-items: center;
+      content: url("../img/marker.svg");
+    }
+  }
+
+  &__text-desc {
   }
 }
