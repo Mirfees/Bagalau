@@ -1,6 +1,7 @@
 $primaryColor: #0C4E8A;
 $accentColor: #F9D41A;
-$plainTextColor: #0D0C22;
+$plainTextColorBlack: #0D0C22;
+$plainTextColor: #3d3d4e;
 
 html {
   font-family: Montserrat;
@@ -28,6 +29,7 @@ a {
   font-weight: 700;
   line-height: 36px;
   letter-spacing: -0.1px;
+  color: $plainTextColorBlack;
 }
 
 .main-title {
@@ -35,15 +37,70 @@ a {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+
+  span {
+    color: $accentColor;
+  }
 }
 
 .section-title {
   font-size: 48px;
   font-weight: 800;
   line-height: 56px;
-  color: $plainTextColor;
+  color: $plainTextColorBlack;
 
   span {
     color: $primaryColor;
   }
+}
+
+.accent-button {
+  display: inline-block;
+  padding: 17.5px 70px;
+  background-color: $accentColor;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color .2s linear;
+  cursor: pointer;
+  color: $plainTextColorBlack;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 17px 66px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: $primaryColor;
+  border-radius: 10px;
+  color: #fff;
+  transition-property: color, background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accentColor;
+    color: $plainTextColorBlack;
+  }
+}
+
+input,
+select {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #888888;
+}
+
+select {
+  color: #888888;
 }

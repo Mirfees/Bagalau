@@ -1,0 +1,38 @@
+.reasons {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    text-align: center;
+  }
+
+  &__header {
+    margin-bottom: 94px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 25px;
+  }
+
+  &__card {
+  }
+
+  &__card-icon {
+    margin-bottom: 20px;
+    img {
+      background-color: $accentColor;
+      padding: 9px;
+      border-radius: 50%;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 10px;
+  }
+
+  &__card-desc {
+  }
+}

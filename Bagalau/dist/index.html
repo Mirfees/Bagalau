@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240226185625"/>
-  <link rel="stylesheet" href="css/style.css?_v=20240226185625">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240227122032"/>
+  <link rel="stylesheet" href="css/style.css?_v=20240227122032">
 </head>
 <body>
     <section class="header">
@@ -82,7 +82,7 @@
             <div class="container">
                 <h1 class="main-title">Оценка жилых домов</h1>
                 <p class="hero__desc">Мы обработаем вашу заявку и свяжемся с вами</p>
-                <a href="" class="hero__button button">Заказать услугу</a>
+                <a href="" class="hero__button button accent-button">Заказать услугу</a>
             </div>
         </div>
     </section>
@@ -208,7 +208,160 @@
             </div>
 
             <div class="grade__button-wrapper">
-                <a href="" class="grade__button">Заказать оценку</a>
+                <a href="" class="grade__button primary-button">Заказать оценку</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="consultation">
+    <div class="consultation__container">
+        <div class="container">
+            <div class="consultation__wrapper">
+                <div class="consultation__header">
+                    <div class="main-title">Получите <span>бесплатную</span> консультацию и выезд специалиста</div>
+                </div>
+                <div class="consultation__form-container">
+                    <form class="consultation__form" action="" name="consultation" id="consultation">
+                        <div class="consultation__row">
+                            <input type="text" placeholder="Имя" name="first_name" id="first_name">
+                        </div>
+                        <div class="consultation__row">
+                            <input type="text" placeholder="Телефон" name="phone_number" id="phone_number">
+                        </div>
+                        <div class="consultation__row">
+                            <select name="grade_select" id="grade_select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                        <div class="consultation__row">
+                            <button type="submit" class="primary-button">Заказать консультацию</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="reasons">
+    <div class="reasons__container">
+        <div class="container">
+            <div class="reasons__header">
+                <h2 class="section-title"><span>6 причин</span> работать с нами</h2>
+            </div>
+
+            <div class="reasons__wrapper">
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-1.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Гарантия качества и скорости
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Любая работа, за которую мы беремся выполняется на высоком уровне и обязательно точно в сроки, указанные в договоре сотрудничества
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-2.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Опыт более 5 лет
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Многолетний опыт и тысячи выполненных заказов позволяют нашему агенству решать задачи, за которые не рискуют браться другие
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-3.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Удобство
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Поддержка круглосуточно, без перерывов и выходных. Выезд эксперта-оценщика на объект бесплатно (любой адрес)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-4.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Доступные цены
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Мы предлагаем своим клиентам готовность отчета об оценке за 1 рабочий день и за 5 часа в срочных случаях. Успеем точно в срок!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-5.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Надежность
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Наша компания придерживается строгой политики соблюдения конфиденциальности, предоставленной вами информации во время оформления заказов
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reasons__card">
+                    <div class="reasons__card-icon">
+                        <img src="img/reason-6.svg" alt="">
+                    </div>
+
+                    <div class="reasons__card-title">
+                        <p class="bold-plain-text">
+                            Профессиональная команда
+                        </p>
+                    </div>
+
+                    <div class="reasons__card-desc">
+                        <p class="plain-text">
+                            Мы собрали лучших специалистов на рынке с большим опытом для любого вида услуг.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -217,7 +370,7 @@
     <footer class="footer">
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240226185625"></script>
-<script src="js/script.js?_v=20240226185625"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240227122032"></script>
+<script src="js/script.js?_v=20240227122032"></script>
 </body>
 </html>
