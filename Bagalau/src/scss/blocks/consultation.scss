@@ -18,7 +18,8 @@
   }
 
   &__form-container {
-
+    justify-self: center;
+    width: 354px;
   }
 
   &__form {
@@ -36,5 +37,13 @@
   }
 
   &__row {
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0;
+    width: 100%;
   }
 }

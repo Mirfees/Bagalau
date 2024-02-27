@@ -1,0 +1,46 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 25px;
+    background: url("../img/order-grade-bg.png") no-repeat 0% 0%;
+    background-color: $primaryColor;
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__copyright,
+  &__develop a{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    color: #aec4d8;
+  }
+
+  .menu-list {
+    &__link {
+      color: #fff;
+
+      &:hover {
+        color: $accentColor;
+      }
+
+      &.active {
+        color: $accentColor;
+      }
+    }
+  }
+}

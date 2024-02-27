@@ -83,6 +83,7 @@ a {
   transition-duration: .2s;
   transition-timing-function: linear;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     background-color: $accentColor;

@@ -215,6 +215,7 @@ a {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .primary-button:hover {
@@ -324,7 +325,7 @@ ol {
   display: flex;
   justify-content: center;
   width: 100%;
-  border-bottom: 0.3px solid #0C4E8A;
+  border: 0.3px solid #0C4E8A;
   background: #fff;
 }
 
@@ -355,23 +356,23 @@ ol {
   text-decoration: none;
 }
 
-.top-menu__container {
+.menu-list__container {
   display: flex;
   gap: 30px;
 }
 
-.top-menu__item {
+.menu-list__item {
   font-size: 13px;
   font-weight: 800;
   line-height: 20px;
 }
 
-.top-menu__link {
+.menu-list__link {
   transition: color 0.1s linear;
 }
 
-.top-menu__link.active,
-.top-menu__link:hover {
+.menu-list__link.active,
+.menu-list__link:hover {
   color: #0C4E8A;
 }
 
@@ -545,6 +546,11 @@ ol {
   grid-template-columns: 1fr 1fr;
 }
 
+.consultation__form-container {
+  justify-self: center;
+  width: 354px;
+}
+
 .consultation__form {
   display: grid;
   justify-content: center;
@@ -556,6 +562,14 @@ ol {
 
 .consultation__form input,
 .consultation__form select {
+  width: 100%;
+}
+
+.consultation__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 0;
   width: 100%;
 }
 
@@ -671,6 +685,7 @@ ol {
 
 .license__header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .license__wrapper {
@@ -684,4 +699,47 @@ ol {
 .license .swiper-pagination {
   position: relative;
   margin-top: 30px;
+}
+
+.license .swiper-pagination-bullet {
+  background-color: #0C4E8A;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 58px;
+  padding-bottom: 25px;
+  background: url("../img/order-grade-bg.png") no-repeat 0% 0%;
+  background-color: #0C4E8A;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper:first-child {
+  margin-bottom: 20px;
+}
+
+.footer__copyright,
+.footer__develop a {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  color: #aec4d8;
+}
+
+.footer .menu-list__link {
+  color: #fff;
+}
+
+.footer .menu-list__link:hover {
+  color: #F9D41A;
+}
+
+.footer .menu-list__link.active {
+  color: #F9D41A;
 }

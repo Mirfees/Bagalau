@@ -9,6 +9,7 @@
 
   &__header {
     text-align: center;
+    margin-bottom: 30px;
   }
 
   &__wrapper {
@@ -25,5 +26,9 @@
   .swiper-pagination {
     position:  relative;
     margin-top: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $primaryColor;
   }
 }
