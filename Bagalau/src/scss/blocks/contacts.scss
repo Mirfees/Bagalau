@@ -1,0 +1,41 @@
+.contacts {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px;
+  }
+
+  &__map {
+  }
+
+  &__list {
+    padding: 50px;
+    border: 1px solid #EAEAEA
+
+  }
+
+  &__row {
+  }
+
+  &__title {
+  }
+
+  &__address {
+  }
+
+  &__phone {
+  }
+
+  &__email {
+  }
+
+  &__inst {
+  }
+}

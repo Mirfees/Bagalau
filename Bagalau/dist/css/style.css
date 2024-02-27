@@ -747,6 +747,57 @@ ol {
   background-color: #0C4E8A;
 }
 
+.contacts__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;
+}
+
+.contacts__list {
+  padding: 50px;
+  border: 1px solid #EAEAEA;
+}
+
+.grade-home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.grade-home__header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.grade-home__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.grade-home__row {
+  display: grid;
+  gap: 20px;
+}
+
+.grade-home__item {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 20px;
+}
+
+.grade-home__item:before {
+  content: url("../img/check.svg");
+}
+
 .footer__container {
   display: flex;
   align-items: center;

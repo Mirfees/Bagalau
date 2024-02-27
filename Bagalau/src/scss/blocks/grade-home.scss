@@ -1,0 +1,36 @@
+.grade-home {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+  }
+
+  &__row {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 20px;
+    &:before {
+      content: url("../img/check.svg");
+    }
+  }
+}
