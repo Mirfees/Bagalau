@@ -1,4 +1,4 @@
-.grade {
+.our-partners {
   &__container {
     @include __container;
     text-align: center;
@@ -8,27 +8,13 @@
     margin-bottom: 100px;
   }
 
-  &__title {
-  }
-
   &__wrapper {
     @include grid_5_in_row;
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 21px 31px;
-    background-color: #D8D8D818;
+    padding: 18px 34px;
+    background-color: #f7f7f7;
     border-radius: 10px;
-  }
-
-  &__button-wrapper {
-
-  }
-
-  &__button {
-
   }
 }

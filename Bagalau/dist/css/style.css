@@ -380,7 +380,7 @@ select {
 .services__container {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   margin-bottom: 150px;
 }
 
@@ -418,7 +418,7 @@ select {
 .about__container {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   margin-bottom: 150px;
 }
 
@@ -432,9 +432,10 @@ select {
 
 .why-we__container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 150px;
 }
@@ -486,8 +487,8 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin-bottom: 150px;
+  text-align: center;
 }
 
 .grade__header {
@@ -572,4 +573,29 @@ select {
 
 .reasons__card-title {
   margin-bottom: 10px;
+}
+
+.our-partners__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.our-partners__header {
+  margin-bottom: 100px;
+}
+
+.our-partners__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 50px;
+}
+
+.our-partners__item {
+  padding: 18px 34px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }

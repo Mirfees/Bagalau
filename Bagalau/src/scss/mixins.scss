@@ -1,0 +1,13 @@
+@mixin __container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+@mixin grid_5_in_row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+  margin-bottom: 50px;
+}
