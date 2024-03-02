@@ -1,6 +1,7 @@
 .grade {
   &__container {
     @include __container;
+    @include xl_margin;
     text-align: center;
   }
 

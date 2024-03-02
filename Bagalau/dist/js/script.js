@@ -8,7 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
             pauseOnMouseEnter: true,
         },
 
-        // Navigation arrows
+        breakpoints: {
+            576: {
+                slidesPerView: 3,
+            },
+
+            0: {
+                slidesPerView: 1,
+            },
+        },
+
         navigation: {
             nextEl: '.services__slider-next',
             prevEl: '.services__slider-prev',
@@ -27,7 +36,22 @@ document.addEventListener('DOMContentLoaded', function () {
             pauseOnMouseEnter: true,
         },
 
-        // Navigation arrows
+        breakpoints: {
+            1200: {
+                slidesPerView: 4.5,
+            },
+            992: {
+                slidesPerView: 3.5,
+            },
+            576: {
+                slidesPerView: 2.5,
+            },
+
+            0: {
+                slidesPerView: 1,
+            },
+        },
+
         navigation: {
             nextEl: '.license__slider-next',
             prevEl: '.license__slider-prev',

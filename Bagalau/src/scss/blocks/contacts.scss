@@ -3,13 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    @include xl_margin;
   }
 
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 23px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   canvas {
@@ -20,6 +24,10 @@
     padding: 50px;
     border: 1px solid #EAEAEA;
     border-radius: 20px;
+
+    @media (max-width: 992px) {
+      padding: 25px;
+    }
   }
 
   &__col {
@@ -32,7 +40,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 20px;
+    font-size: clamp(0.75rem, 0.417rem + 0.926vw, 1.25rem);
     font-weight: 500;
     line-height: 22px;
 
@@ -48,6 +56,14 @@
 
   &__title {
     margin-bottom: 90px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__address {
@@ -57,7 +73,7 @@
   &__phone {
     display: block;
     font-weight: 700;
-    font-size: 30px;
+    font-size: clamp(1.25rem, 0.833rem + 1.157vw, 1.875rem);
     color: $primaryColor;
     margin-bottom: 55px;
   }

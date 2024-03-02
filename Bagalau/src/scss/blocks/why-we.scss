@@ -3,16 +3,20 @@
     @include __container;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 150px;
+    @include xs_margin;
   }
 
   &__wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 108px;
-    padding-bottom: 118px;
+    @include m_pading;
     background-image: url("../img/why-we-bg.png");
+
+    @media (max-width: 992px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__cards {
@@ -20,6 +24,11 @@
     grid-template-columns: repeat(3, 31.733%);
     justify-content: center;
     gap: 26px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      gap: 13px;
+    }
   }
 
   &__header {
@@ -39,12 +48,16 @@
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (max-width: 992px) {
+      padding: 30px;
+    }
   }
 
   &__card-title {
-    font-size: 48px;
+    font-size: clamp(1.5rem, 0.5rem + 2.778vw, 3rem);
+    line-height: clamp(2.813rem, 2.354rem + 1.273vw, 3.5rem);
     font-weight: 700;
-    line-height: 56px;
     letter-spacing: -.2px;
     text-align: center;
     color: $accentColor;
@@ -52,9 +65,9 @@
   }
 
   &__card-desc {
-    font-size: 20px;
+    font-size: clamp(0.75rem, 0.417rem + 0.926vw, 1.25rem);
     font-weight: 700;
-    line-height: 24px;
+    line-height: clamp(1.063rem, 0.271rem + 2.199vw, 2.25rem);
     letter-spacing: -.2px;
     color: #fff;
   }

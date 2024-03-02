@@ -1,15 +1,24 @@
 .services {
   &__container {
     @include __container;
+    @include xl_margin;
     text-align: center;
   }
 
   &__title {
     margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__desc {
     margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__slider-container {

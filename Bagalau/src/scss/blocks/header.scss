@@ -1,5 +1,8 @@
 .header {
   height: 85px;
+  @media (max-width: 992px) {
+    height: 65px;
+  }
   &__container {
     position: fixed;
     z-index: 10;
@@ -15,6 +18,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 23px 0;
+
+    @media (max-width: 992px) {
+      padding: 13px 0;
+    }
   }
 
   &__logo {

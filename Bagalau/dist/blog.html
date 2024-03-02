@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240302163139"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240302163139"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240302183129"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240302183129"/>
 
-  <link rel="stylesheet" href="css/style.css?_v=20240302163139">
+  <link rel="stylesheet" href="css/style.css?_v=20240302183129">
 </head>
 <body>
 <header class="header">
@@ -46,6 +46,17 @@
 
                         <div class="menu-list__item">
                             <a href="/blog.html" class="menu-list__link">БЛОГ</a>
+                        </div>
+
+                        <div class="language language_location_mobile">
+                            <div class="language__container">
+                                <div class="language__item active">
+                                    <a href="/" class="language__link">Рус</a>
+                                </div>
+                                <div class="language__item">
+                                    <a href="/kz" class="language__link">Каз</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -572,7 +583,11 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__logo">
-                    <img src="img/logo-footer.png" alt="">
+                    <picture>
+                        <source media="(max-width:576px)" srcset="img/logo-white-mobile.png">
+                        <img src="img/logo-footer.png" alt="">
+                    </picture>
+
                 </div>
 
                 <div class="menu-list">
@@ -619,7 +634,7 @@
             </div>
 
             <div class="footer__wrapper">
-                <div class="footer__copyright">2024 © Все права защищены</div>
+                <div class="footer__copyright"><p>2024 © Все права защищены</p></div>
                 <div class="footer__develop">
                     <a href="https://astanacreative.kz" target="_blank">Разработано в Astana Creative</a>
                 </div>
@@ -627,8 +642,8 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240302163139"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240302163139"></script>
-<script src="js/script.js?_v=20240302163139"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240302183129"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240302183129"></script>
+<script src="js/script.js?_v=20240302183129"></script>
 </body>
 </html>

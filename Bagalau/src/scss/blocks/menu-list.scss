@@ -1,11 +1,7 @@
 .menu-list {
   &__container {
     display: flex;
-    gap: 30px;
-
-    @media (max-width: 1200px) {
-      gap: 15px;
-    }
+    gap: clamp(0.938rem, 0.313rem + 1.736vw, 1.875rem);
 
     @media (max-width: 992px) {
       flex-direction: column;

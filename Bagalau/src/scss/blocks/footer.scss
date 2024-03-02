@@ -17,9 +17,17 @@
     &:first-child {
       margin-bottom: 20px;
     }
+
+    @media (max-width: 380px) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__logo {
+    @media (max-width: 576px) {
+      width: 50px;
+    }
   }
 
   &__copyright,

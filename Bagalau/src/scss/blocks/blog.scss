@@ -1,6 +1,7 @@
 .blog {
   &__container {
     @include __container;
+    @include xl_margin;
   }
 
   &__header {

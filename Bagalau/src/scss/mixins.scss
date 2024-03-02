@@ -2,7 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
+}
+
+@mixin xl_margin {
+  margin-bottom: clamp(1.875rem, -3.125rem + 13.889vw, 9.375rem);
+}
+
+@mixin xs_margin {
+  margin-bottom: clamp(0.938rem, 0.229rem + 1.968vw, 2rem);
+}
+
+@mixin m_pading {
+  padding: clamp(1.563rem, -1.563rem + 8.681vw, 6.25rem) 0;
+}
+
+@mixin s_padding {
+  padding: clamp(1.563rem, 0.104rem + 4.051vw, 3.75rem) 0;
 }
 
 @mixin grid_5_in_row {
@@ -10,4 +25,12 @@
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 25px;
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 1fr;
+  }
 }

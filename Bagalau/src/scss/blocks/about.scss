@@ -1,6 +1,7 @@
 .about {
   &__container {
     @include __container;
+    @include xl_margin;
   }
 
   &__header {
@@ -19,12 +20,25 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
   }
 
   &__photo-block {
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 
   &__text-block {
+    @media (max-width: 576px) {
+      margin-left: 50px;
+    }
+
     position: relative;
     &:before {
       position: absolute;

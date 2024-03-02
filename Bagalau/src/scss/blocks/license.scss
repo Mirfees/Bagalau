@@ -13,7 +13,7 @@
   }
 
   &__wrapper {
-    margin-bottom: 150px;
+    @include xl_margin;
   }
 
   &__slider {
