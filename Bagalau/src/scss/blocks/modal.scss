@@ -1,0 +1,46 @@
+.modal {
+  &__form {
+    display: none;
+    background-color: #E6E6EB;
+    border-radius: 20px;
+    max-width: 354px;
+    .f-button {
+      color: #b8b8bc;
+      background-color: unset;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: $plainTextColorBlack;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__row {
+    input,
+    select{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fancybox__content > .f-button.is-close-btn {
+  top: 5px;
+  right: 5px;
+}

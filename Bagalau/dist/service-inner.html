@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Внутренняя страница услуги</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240302143324"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240302143324"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240302163139"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240302163139"/>
 
-  <link rel="stylesheet" href="css/style.css?_v=20240302143324">
+  <link rel="stylesheet" href="css/style.css?_v=20240302163139">
 </head>
 <body>
 <header class="header">
     <div class="header__container">
         <div class="container">
             <div class="header__wrapper">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
                 <div class="header__logo">
                     <a href="/">
-                        <img src="img/logo.png" alt="">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/logo-mobile.png">
+                            <img src="img/logo.png" alt="">
+                        </picture>
                     </a>
                 </div>
 
-                <div class="menu-list">
+                <div class="menu-list" id="menu">
                     <div class="menu-list__container">
                         <div class="menu-list__item">
                             <a href="javascript:;" class="menu-list__link">ВЫБЕРИТЕ ГОРОД</a>
@@ -143,7 +149,7 @@
                     </div>
                 </div>
                 <div class="why-we__button-wrapper">
-                    <a href="" class="why-we__button primary-button">Заказать оценку</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="why-we__button primary-button">Заказать оценку</a>
                 </div>
             </div>
         </div>
@@ -200,7 +206,7 @@
             </div>
 
             <div class="grade__button-wrapper">
-                <a href="" class="grade__button primary-button">Заказать оценку</a>
+                <a data-fancybox data-src="#modal" href="javascript:;" class="grade__button primary-button">Заказать оценку</a>
             </div>
         </div>
     </div>
@@ -512,6 +518,37 @@
     </div>
 </section>
 
+<div class="modal hidden">
+  <form class="modal__form" action="" name="modal" id="modal">
+    <div class="modal__title">Заказать оценку</div>
+    <div class="modal__desc">
+      <p class="plain-text">Мы обработаем вашу заявку и свяжемся с вами</p>
+    </div>
+    <div class="modal__row">
+      <input type="text" placeholder="Имя" name="modal_first_name" id="modal_first_name">
+    </div>
+    <div class="modal__row">
+      <input type="text" placeholder="Телефон" name="modal_phone_number" id="modal_phone_number">
+    </div>
+    <div class="modal__row">
+      <select name="modal_grade_select" id="modal_grade_select">
+        <option value="1">Вид оценки</option>
+        <option value="2">2</option>
+      </select>
+    </div>
+    <div class="modal__row">
+      <select name="modal_grade_select" id="modal_city_select">
+        <option value="1">Город</option>
+        <option value="2">2</option>
+      </select>
+    </div>
+
+    <div class="modal__row">
+      <button type="submit" class="modal__button primary-button"><span>Оставить заявку</span></button>
+    </div>
+  </form>
+</div>
+
 <footer class="footer">
     <div class="footer__container">
         <div class="container">
@@ -572,8 +609,8 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240302143324"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240302143324"></script>
-<script src="js/script.js?_v=20240302143324"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240302163139"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240302163139"></script>
+<script src="js/script.js?_v=20240302163139"></script>
 </body>
 </html>

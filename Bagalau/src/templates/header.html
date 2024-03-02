@@ -2,13 +2,19 @@
     <div class="header__container">
         <div class="container">
             <div class="header__wrapper">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
                 <div class="header__logo">
                     <a href="/">
-                        <img src="img/logo.png" alt="">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/logo-mobile.png">
+                            <img src="img/logo.png" alt="">
+                        </picture>
                     </a>
                 </div>
 
-                <div class="menu-list">
+                <div class="menu-list" id="menu">
                     <div class="menu-list__container">
                         <div class="menu-list__item">
                             <a href="javascript:;" class="menu-list__link">ВЫБЕРИТЕ ГОРОД</a>
