@@ -35,7 +35,7 @@
     padding: 50px 50px 74px 50px;
     background: $primaryColor;
     border-radius: 26px;
-    background-image: url("../img/why-we-bg.png");
+    background-image: url("../img/why-we-card-bg.png");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,9 +59,20 @@
     color: #fff;
   }
 
+  &__button-wrapper {
+    margin-top: 50px;
+  }
+
   &_location {
     &_inner {
       .why-we {
+        &__wrapper {
+          background-image: none;
+          padding: 0;
+        }
+        &__title {
+          margin-bottom: 50px;
+        }
         &__card {
           padding: 50px 17px 50px 17px;
         }

@@ -1,0 +1,23 @@
+.article {
+  &__container {
+    @include __container;
+  }
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+  }
+
+  &__wrapper {
+  }
+
+  &__main-image {
+    float: left;
+    margin-right: 25px;
+  }
+
+  &__text {
+  }
+}

@@ -568,7 +568,7 @@ ol {
   padding: 50px 50px 74px 50px;
   background: #0C4E8A;
   border-radius: 26px;
-  background-image: url("../img/why-we-bg.png");
+  background-image: url("../img/why-we-card-bg.png");
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -590,6 +590,19 @@ ol {
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #fff;
+}
+
+.why-we__button-wrapper {
+  margin-top: 50px;
+}
+
+.why-we_location_inner .why-we__wrapper {
+  background-image: none;
+  padding: 0;
+}
+
+.why-we_location_inner .why-we__title {
+  margin-bottom: 50px;
 }
 
 .why-we_location_inner .why-we__card {
@@ -930,6 +943,22 @@ ol {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px 25px;
+}
+
+.article__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.article__header {
+  margin-bottom: 50px;
+}
+
+.article__main-image {
+  float: left;
+  margin-right: 25px;
 }
 
 .article-card__img {
