@@ -12,30 +12,61 @@
     gap: 23px;
   }
 
-  &__map {
+  canvas {
+    border-radius: 20px;
   }
 
   &__list {
     padding: 50px;
-    border: 1px solid #EAEAEA
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+  }
+
+  &__col {
 
   }
 
   &__row {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   &__title {
+    margin-bottom: 90px;
   }
 
   &__address {
+    display: block;
   }
 
   &__phone {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: $primaryColor;
+    margin-bottom: 55px;
   }
 
   &__email {
+    display: block;
   }
 
   &__inst {
+    display: block;
   }
 }
