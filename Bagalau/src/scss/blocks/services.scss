@@ -1,7 +1,7 @@
 .services {
   &__container {
     @include __container;
-    @include xl_margin;
+    @include xl_margin_bottom;
     text-align: center;
   }
 
@@ -14,7 +14,7 @@
   }
 
   &__desc {
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
 
     @media (max-width: 576px) {
       margin-bottom: 15px;
@@ -26,7 +26,7 @@
   }
 
   &__slider-buttons-container {
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
   }
 
   &__slider-buttons {

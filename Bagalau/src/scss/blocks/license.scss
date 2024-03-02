@@ -4,16 +4,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
   }
 
   &__header {
     text-align: center;
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
   }
 
   &__wrapper {
-    @include xl_margin;
+    @include xl_margin_bottom;
   }
 
   &__slider {

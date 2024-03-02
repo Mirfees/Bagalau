@@ -1,7 +1,7 @@
 .order-grade {
   &__container {
     @include __container;
-    @include xl_margin;
+    @include xl_margin_bottom;
     padding: 100px 0;
     background: url("../img/order-grade-bg.png") no-repeat center center;
     background-color: $primaryColor;
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 26px;
-    margin-bottom: 50px;
+    @include s_margin_bottom;
 
     @media (max-width: 576px) {
       grid-template-columns: 1fr;

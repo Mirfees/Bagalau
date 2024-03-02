@@ -19,7 +19,7 @@
   }
 
   &__desc {
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
     text-align: center;
   }
 

@@ -1,11 +1,11 @@
 .article {
   &__container {
     @include __container;
-    @include xl_margin;
+    @include xl_margin_bottom;
   }
 
   &__header {
-    margin-bottom: 50px;
+    @include s_margin_bottom;
   }
 
   &__title {

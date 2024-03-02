@@ -1,12 +1,12 @@
 .grade {
   &__container {
     @include __container;
-    @include xl_margin;
+    @include xl_margin_bottom;
     text-align: center;
   }
 
   &__header {
-    margin-bottom: 100px;
+    @include m_margin_bottom;
   }
 
   &__title {

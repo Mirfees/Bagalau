@@ -1,7 +1,7 @@
 .consultation {
   &__container {
     @include __container;
-    @include xl_margin;
+    @include xl_margin_bottom;
     width: 100%;
     background-image: url("../img/consultation.png");
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   }
 
   &__header {
-    margin-bottom: 30px;
+    @include xs_margin_bottom;
 
     @media (max-width: 768px) {
 

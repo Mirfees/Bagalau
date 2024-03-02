@@ -5,9 +5,13 @@
 
   &__img {
     position: relative;
-    height: 250px;
+    max-height: 250px;
     border-radius: 20px;
     margin-bottom: 10px;
+    
+    @media (max-width: 1200px) {
+      
+    }
   }
 
   &__read-more {
@@ -26,6 +30,12 @@
     color: #111;
     transition: background-color .2s;
 
+    @media (max-width: 576px) {
+      right: unset;
+      bottom: 20px;
+      left: 20px;
+    }
+
     &:after {
       content: url("../img/read-more-arrow.svg");
       display: flex;
@@ -43,9 +53,9 @@
   }
 
   &__title {
-    font-size: 20px;
+    font-size: clamp(1rem, 0.833rem + 0.463vw, 1.25rem);
     font-weight: 700;
-    line-height: 36px;
+    line-height: clamp(1.625rem, 1.208rem + 1.157vw, 2.25rem);
     color: $plainTextColorBlack;
   }
 
