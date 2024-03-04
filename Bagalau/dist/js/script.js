@@ -157,35 +157,23 @@ document.addEventListener('DOMContentLoaded', function () {
     let wayRight = document.querySelectorAll('.way--right');
     let clientWindowHeight = document.documentElement.clientHeight;
 
-    wayUp.forEach(element => {
-        new Waypoint({
-            element: element,
-            handler: function() {
-                this.element.classList.add('way--active');
-            },
-            offset: clientWindowHeight * 0.8
-        })
-    });
+    let ways = {
+      "wayUp": wayUp,
+      "wayLeft": wayLeft,
+      "wayRight": wayRight
+    };
 
-    wayLeft.forEach(element => {
-        new Waypoint({
-            element: element,
-            handler: function() {
-                this.element.classList.add('way--active');
-            },
-            offset: clientWindowHeight * 0.8
-        })
-    });
-
-    wayRight.forEach(element => {
-        new Waypoint({
-            element: element,
-            handler: function() {
-                this.element.classList.add('way--active');
-            },
-            offset: clientWindowHeight * 0.8
-        })
-    });
+    for (key in ways) {
+        ways[key].forEach(element => {
+            new Waypoint({
+                element: element,
+                handler: function() {
+                    this.element.classList.add('way--active');
+                },
+                offset: clientWindowHeight * 0.8
+            })
+        });
+    }
 });
 
 $(document).ready(function() {
