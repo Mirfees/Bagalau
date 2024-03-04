@@ -576,7 +576,7 @@ ol {
 
 .slider__buttons-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .slider__buttons {
@@ -1426,7 +1426,7 @@ ol {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .footer__wrapper:first-child {
