@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240302195134"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240302195134"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240304160420"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240304160420"/>
 
-  <link rel="stylesheet" href="css/style.css?_v=20240302195134">
+  <link rel="stylesheet" href="css/style.css?_v=20240304160420">
 </head>
 <body>
 <header class="header">
@@ -29,26 +29,61 @@
                 <div class="menu-list" id="menu">
                     <div class="menu-list__container">
                         <div class="menu-list__item">
-                            <a href="javascript:;" class="menu-list__link">ВЫБЕРИТЕ ГОРОД</a>
+
+                            <div class="dropdown-menu">
+                                <a href="javascript:;" class="menu-list__link menu-list__dropdown">ВЫБЕРИТЕ ГОРОД</a>
+                                <ul class="dropdown-menu__list dropdown-menu__city">
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Астана</a></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="menu-list__item">
-                            <a href="javascript:;" class="menu-list__link active">УСЛУГИ</a>
+                            <div class="dropdown-menu">
+                                <a href="javascript:;" class="menu-list__link menu-list__dropdown active">УСЛУГИ</a>
+                                <ul class="dropdown-menu__list dropdown-menu__service">
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">СПИСОК ДОКУМЕНТОВ ДЛЯ ОЦЕНКИ НЕДВИЖИМОСТИ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ДЛЯ БАНКОВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ЖИЛЫХ ДОМОВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА КВАРТИР</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА НЕЖИЛЫХ ПОМЕЩЕНИЙ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ЗЕМЕЛЬНЫХ УЧАСТКОВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ЛЕГКОВЫХ АВТОМОБИЛЕЙ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ГРУЗОВЫХ АВТОМОБИЛЕЙ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА СПЕЦТЕХНИКИ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ЛОДОК</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ВАГОНОВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ОБОРУДОВАНИЯ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ОСНОВНЫХ СРЕДСТВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ТОВАРОВ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ДОРОГ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ОСТАТОЧНОЙ СТОИМОСТИ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ДЛЯ НАЛОГОВОЙ</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ДЛЯ СУДА</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОЦЕНКА ДЛЯ НАСЛЕДСТВА</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Оценка бизнеса</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Оценка интеллектуальной собственности</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Оценка ущерба</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Оценка ущерба при ДТП</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Оценка ущерба после потопа пожара</a></li>
+                                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Аналитическая справка</a></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="menu-list__item">
-                            <a href="#license" class="menu-list__link">ЛИЦЕНЗИИ</a>
+                            <a href="#license" class="menu-list__link js-anchor">ЛИЦЕНЗИИ</a>
                         </div>
 
                         <div class="menu-list__item">
-                            <a href="#contacts" class="menu-list__link">КОНТАКТЫ</a>
+                            <a href="#contacts" class="menu-list__link js-anchor">КОНТАКТЫ</a>
                         </div>
 
                         <div class="menu-list__item">
                             <a href="/blog.html" class="menu-list__link">БЛОГ</a>
                         </div>
 
-                        <div class="language language_location_mobile">
+                        <div class="language language_location_mobile ">
                             <div class="language__container">
                                 <div class="language__item active">
                                     <a href="/" class="language__link">Рус</a>
@@ -63,8 +98,8 @@
 
                 <div class="language">
                     <div class="language__container">
-                        <div class="language__item active">
-                            <a href="/" class="language__link">Рус</a>
+                        <div class="language__item ">
+                            <a href="/" class="language__link active">Рус</a>
                         </div>
                         <div class="language__item">
                             <a href="/kz" class="language__link">Каз</a>
@@ -123,18 +158,10 @@
                 <h2 class="article__title section-title">Предварительная <span>оценка</span> в Астане</h2>
             </div>
             <article class="article__wrapper">
-                <div class="article__main-image">
+                <div class="article__main-image way--left">
                     <img src="img/article-main-img.png" alt="">
                 </div>
-                <div class="article__text">
-                    <p class="plain-text">
-                        Проведение данной процедуры и получение соответствующего документа необходимо в целом ряде случаев.
-                        Для проведения сделок купли-продажи. Таким образом, собственник может реализовать квартиру или частный дом по наиболее выгодной цене. Наличие оценочного документа поможет владельцу не продешевить во время продажи недвижимости.
-                        Для быстрой продажи. Оценка недвижимости в Алматы дает возможность собственнику установить рыночную стоимость, тем самым исключив необоснованное завышение цены. Благодаря этому покупатели более охотно будут рассматривать предложение продажи недвижимости.
-                        Для определения залоговой стоимости при решении оформить кредит. Банковские учреждения при выдаче крупных кредитов требуют от клиентов оформлять залог, который выступает гарантией возвращения выданных финансовых средств. Оценочный документ от лицензированной компании позволяет рассчитывать не только на подписание документов по кредитованию, но и получение максимально необходимой суммы.
-                        Кроме описанных выше причин присутствуют и другие, среди которых
-                    </p>
-
+                <div class="article__text way--right">
                     <p class="plain-text">
                         Проведение данной процедуры и получение соответствующего документа необходимо в целом ряде случаев.
                         Для проведения сделок купли-продажи. Таким образом, собственник может реализовать квартиру или частный дом по наиболее выгодной цене. Наличие оценочного документа поможет владельцу не продешевить во время продажи недвижимости.
@@ -152,10 +179,10 @@
     <div class="blog__container">
         <div class="container">
             <div class="blog__header">
-                <h2 class="blog__title section-title">Популярные статьи</h2>
+                <h2 class="blog__title section-title way--left">Популярные статьи</h2>
             </div>
             <div class="blog__wrapper">
-                <div class="article-card">
+                <div class="article-card way--up">
                     <div class="article-card__container">
                         <div class="article-card__img">
                             <img src="img/blog-1.png" alt="">
@@ -169,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="article-card">
+                <div class="article-card way--up">
                     <div class="article-card__container">
                         <div class="article-card__img">
                             <img src="img/blog-2.png" alt="">
@@ -183,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="article-card">
+                <div class="article-card way--up">
                     <div class="article-card__container">
                         <div class="article-card__img">
                             <img src="img/blog-3.png" alt="">
@@ -205,12 +232,12 @@
 <section class="why-we">
     <div class="why-we__container">
         <div class="container">
-            <div class="why-we__header">
+            <div class="why-we__header way--left">
                 <h2 class="why-we__title section-title">Почему выбирают <span>нас</span>?</h2>
                 <p class="why-we__desc bold-plain-text">Сами выезжаем на объект делаем Оценку за один день!</p>
             </div>
         </div>
-        <div class="why-we__wrapper">
+        <div class="why-we__wrapper way--left">
             <div class="container">
                 <div class="why-we__cards">
                     <div class="why-we__card">
@@ -236,11 +263,11 @@
 <section class="grade">
     <div class="grade__container">
         <div class="container">
-            <div class="grade__header">
+            <div class="grade__header way--left">
                 <h2 class="grade__title section-title"><span>Оценка</span> для банков</h2>
             </div>
 
-            <div class="grade__wrapper">
+            <div class="grade__wrapper way--right">
                 <div class="grade__item">
                     <img src="img/otbasy.png" alt="">
                 </div>
@@ -282,7 +309,7 @@
                 </div>
             </div>
 
-            <div class="grade__button-wrapper">
+            <div class="grade__button-wrapper way--left">
                 <a data-fancybox data-src="#modal" href="javascript:;" class="grade__button primary-button">Заказать оценку</a>
             </div>
         </div>
@@ -293,10 +320,10 @@
     <div class="consultation__container">
         <div class="container">
             <div class="consultation__wrapper">
-                <div class="consultation__header">
+                <div class="consultation__header way--left">
                     <div class="main-title">Получите <span>бесплатную</span> консультацию и выезд специалиста</div>
                 </div>
-                <div class="consultation__form-container">
+                <div class="consultation__form-container way--right">
                     <form class="consultation__form" action="" name="consultation" id="consultation">
                         <div class="consultation__row">
                             <input type="text" placeholder="Имя" name="first_name" id="first_name">
@@ -305,9 +332,11 @@
                             <input type="text" placeholder="Телефон" name="phone_number" id="phone_number">
                         </div>
                         <div class="consultation__row">
-                            <select name="grade_select" id="grade_select">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
+                            <select class="js-select" name="grade_select" id="grade_select">
+                                <option selected disabled value="default">Вид оценки</option>
+                                <option value="banks">Оценка для банков</option>
+                                <option value="home">Оценка для жилых домов</option>
+                                <option value="apartment">Оценка квартир</option>
                             </select>
                         </div>
 
@@ -325,12 +354,12 @@
 <section class="reasons">
     <div class="reasons__container">
         <div class="container">
-            <div class="reasons__header">
+            <div class="reasons__header way--up">
                 <h2 class="section-title"><span>6 причин</span> работать с нами</h2>
             </div>
 
             <div class="reasons__wrapper">
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-1.svg" alt="">
                     </div>
@@ -348,7 +377,7 @@
                     </div>
                 </div>
 
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-2.svg" alt="">
                     </div>
@@ -366,7 +395,7 @@
                     </div>
                 </div>
 
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-3.svg" alt="">
                     </div>
@@ -384,7 +413,7 @@
                     </div>
                 </div>
 
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-4.svg" alt="">
                     </div>
@@ -402,7 +431,7 @@
                     </div>
                 </div>
 
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-5.svg" alt="">
                     </div>
@@ -420,7 +449,7 @@
                     </div>
                 </div>
 
-                <div class="reasons__card">
+                <div class="reasons__card way--up">
                     <div class="reasons__card-icon">
                         <img src="img/reason-6.svg" alt="">
                     </div>
@@ -445,11 +474,11 @@
 <section class="our-partners">
     <div class="our-partners__container">
         <div class="container">
-            <div class="our-partners__header">
+            <div class="our-partners__header way--left">
                 <h2 class="section-title">Наши партнеры</h2>
             </div>
 
-            <div class="our-partners__wrapper">
+            <div class="our-partners__wrapper way--right">
                 <div class="our-partners__item">
                     <img src="img/logo-sample.png" alt="">
                 </div>
@@ -497,7 +526,7 @@
 <section class="license" id="license">
     <div class="license__container">
         <div class="container">
-            <div class="license__header">
+            <div class="license__header way--up">
                 <h2 class="section-title">Лицензия</h2>
             </div>
             <div class="license__slider-buttons-container slider__buttons-container">
@@ -508,7 +537,7 @@
             </div>
         </div>
     </div>
-    <div class="license__wrapper">
+    <div class="license__wrapper way--left">
         <div class="swiper license__slider">
             <div class="swiper-wrapper">
                 <div class="license__slide swiper-slide" data-fancybox="gallery" data-src="img/license-1.png"><img src="img/license-1.png" alt=""></div>
@@ -530,11 +559,11 @@
     <div class="contacts__container">
         <div class="container">
             <div class="contacts__wrapper">
-                <div class="contacts__map">
+                <div class="contacts__map way--left">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abdabc3416166621693413da51e5fac06aa0cdea70ef1a142e91f71f43c107d75&amp;source=constructor" width="100%" height="542" frameborder="0"></iframe>
                 </div>
 
-                <div class="contacts__list">
+                <div class="contacts__list way--right">
                     <div class="contacts__col">
                         <div class="contacts__title section-title">Контакты</div>
                     </div>
@@ -568,6 +597,39 @@
         </div>
     </div>
 </section>
+
+<div class="modal hidden">
+  <form class="modal__form" action="" name="modal" id="modal">
+    <div class="modal__title">Заказать оценку</div>
+    <div class="modal__desc">
+      <p class="plain-text">Мы обработаем вашу заявку и свяжемся с вами</p>
+    </div>
+    <div class="modal__row">
+      <input type="text" placeholder="Имя" name="modal_first_name" id="modal_first_name">
+    </div>
+    <div class="modal__row">
+      <input type="text" placeholder="Телефон" name="modal_phone_number" id="modal_phone_number">
+    </div>
+    <div class="modal__row">
+      <select class="js-select js-select-modal" name="modal_grade_select" id="modal_grade_select">
+        <option selected disabled value="default">Вид оценки</option>
+        <option value="banks">Оценка для банков</option>
+        <option value="home">Оценка для жилых домов</option>
+        <option value="apartment">Оценка квартир</option>
+      </select>
+    </div>
+    <div class="modal__row">
+      <select class="js-select js-select-modal" name="modal_grade_select" id="modal_city_select">
+        <option selected disabled value="default">Город</option>
+        <option value="astana">Астана</option>
+      </select>
+    </div>
+
+    <div class="modal__row">
+      <button type="submit" class="modal__button primary-button"><span>Оставить заявку</span></button>
+    </div>
+  </form>
+</div>
 
 <footer class="footer">
     <div class="footer__container">
@@ -633,8 +695,12 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240302195134"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240302195134"></script>
-<script src="js/script.js?_v=20240302195134"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240304160420" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240304160420"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240304160420"></script>
+<script src="js/noframework.waypoints.min.js?_v=20240304160420"></script>
+<script src="js/jquery.nice-select.min.js?_v=20240304160420"></script>
+<script src="js/script.js?_v=20240304160420"></script>
+
 </body>
 </html>

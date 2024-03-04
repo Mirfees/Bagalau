@@ -241,6 +241,10 @@ select {
   color: #888888;
 }
 
+option {
+  font-family: inherit;
+}
+
 ul {
   list-style-type: disc;
   list-style-position: inside;
@@ -249,6 +253,67 @@ ul {
 ol {
   list-style-type: decimal;
   list-style-position: inside;
+}
+
+.nice-select.js-select-modal {
+  margin-bottom: 20px;
+}
+
+.nice-select.js-select {
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #aaa;
+  height: 49px;
+}
+
+.nice-select.js-select .list {
+  width: 100%;
+}
+
+.nice-select.js-select .option {
+  color: #3d3d4e;
+}
+
+.nice-select.js-select .option[data-value=default] {
+  display: none;
+}
+
+.way--up {
+  opacity: 0;
+  transform: translate(0px, 30px);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.way--up.way--active {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+
+.way--left {
+  opacity: 0;
+  transform: translate(-30px, 0px);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.way--left.way--active {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+
+.way--right {
+  opacity: 0;
+  transform: translate(30px, 0px);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.way--right.way--active {
+  opacity: 1;
+  transform: translate(0, 0px);
 }
 
 @font-face {
@@ -289,6 +354,175 @@ ol {
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+
+.nice-select:hover {
+  border-color: #dbdbdb;
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+  border-color: #999;
+}
+
+.nice-select:after {
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform-origin: 66% 66%;
+  transform: rotate(45deg);
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+}
+
+.nice-select.open:after {
+  transform: rotate(-135deg);
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
+  border-color: #ededed;
+  color: #999;
+  pointer-events: none;
+}
+
+.nice-select.disabled:after {
+  border-color: #cccccc;
+}
+
+.nice-select.wide {
+  width: 100%;
+}
+
+.nice-select.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.nice-select.right {
+  float: right;
+}
+
+.nice-select.right .list {
+  left: auto;
+  right: 0;
+}
+
+.nice-select.small {
+  font-size: 12px;
+  height: 36px;
+  line-height: 34px;
+}
+
+.nice-select.small:after {
+  height: 4px;
+  width: 4px;
+}
+
+.nice-select.small .option {
+  line-height: 34px;
+  min-height: 34px;
+}
+
+.nice-select .list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform-origin: 50% 0;
+  transform: scale(0.75) translateY(-21px);
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background-color: #f6f6f6;
+}
+
+.nice-select .option.selected {
+  font-weight: bold;
+}
+
+.nice-select .option.disabled {
+  background-color: transparent;
+  color: #999;
+  cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+  display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+  display: block;
 }
 
 .breadcrumbs__container {
@@ -373,7 +607,7 @@ ol {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 0.3px solid #0C4E8A;
+  border: 0.3px solid rgba(12, 78, 138, 0.2666666667);
   background: #fff;
 }
 
@@ -389,31 +623,35 @@ ol {
   gap: 10px;
 }
 
-.language__item {
+.language__link {
+  display: block;
   padding: 8px 10px;
   font-weight: 600;
   border-radius: 16px;
-}
-
-.language__item.active {
-  border: #0C4E8A solid 1px;
-  font-size: 14px;
-}
-
-.language__link {
   text-decoration: none;
+}
+
+.language__link.active,
+.language__link:hover {
+  outline: #0C4E8A solid 1px;
 }
 
 .language_location_mobile .language__container {
   display: none;
 }
 
-.language_location_mobile .language__item {
+.language_location_mobile .language__link {
   background-color: #F9D41A;
+}
+
+.language_location_mobile .language__link.active,
+.language_location_mobile .language__link:hover {
+  background-color: #0C4E8A;
   color: #fff;
 }
 
 .menu-list__container {
+  position: relative;
   display: flex;
   gap: clamp(0.938rem, 0.313rem + 1.736vw, 1.875rem);
 }
@@ -1132,6 +1370,49 @@ ol {
   right: 5px;
 }
 
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu__list {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 53px;
+  gap: 15px;
+  margin-left: -20px;
+  padding: 25px;
+  background-color: #0C4E8A;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+
+.dropdown-menu__list.active {
+  display: flex;
+}
+
+.dropdown-menu__city {
+  overflow-y: hidden;
+}
+
+.dropdown-menu__item {
+  list-style-type: none;
+}
+
+.dropdown-menu__link {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+  transition: color 0.2s;
+  text-transform: uppercase;
+}
+
+.dropdown-menu__link:hover {
+  color: #F9D41A;
+}
+
 .footer__container {
   display: flex;
   align-items: center;
@@ -1145,6 +1426,7 @@ ol {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 .footer__wrapper:first-child {
@@ -1263,6 +1545,15 @@ ol {
 
   .contacts__title {
     margin-bottom: 45px;
+  }
+
+  .dropdown-menu__list {
+    position: static;
+    margin-left: unset;
+  }
+
+  .dropdown-menu__link {
+    white-space: normal;
   }
 }
 

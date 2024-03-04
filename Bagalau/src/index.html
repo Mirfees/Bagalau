@@ -4,31 +4,23 @@
 <body>
     @@include('templates/header.html')
 
-    <section class="hero">
-        <div class="hero__container">
-            <div class="container">
-                <h1 class="main-title">Оценка жилых домов</h1>
-                <p class="hero__desc">Мы обработаем вашу заявку и свяжемся с вами</p>
-                <a href="" class="hero__button button accent-button">Заказать услугу</a>
-            </div>
-        </div>
-    </section>
+    @@include('templates/hero.html')
 
     <section class="services">
         <div class="services__container">
-            <div class="container">
-                <div class="services__header">
+            <div class="container" id="basic-waypoint">
+                <div class="services__header way--up">
                     <h2 class="services__title section-title"><span>Наши услуги</span></h2>
                     <p class="services__desc plain-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="slider services__slider-container">
+                <div class="slider services__slider-container way--up">
                     <div class="slider__buttons-container services__slider-buttons-container">
                         <div class="slider__buttons services__slider-buttons">
                             <div class="slider__prev services__slider-prev"><img src="img/arrow-left.svg" alt=""></div>
                             <div class="slider__next services__slider-next"><img src="img/arrow-right.svg" alt=""></div>
                         </div>
                     </div>
-                    <div class="swiper services__slider">
+                    <div class="swiper services__slider way--up">
                         <div class="swiper-wrapper">
                             <div class="services__slide swiper-slide"><img src="img/mp-slide-1.png" alt=""><p class="bold-plain-text">Оценка бизнеса</p></div>
                             <div class="services__slide swiper-slide"><img src="img/mp-slide-2.png" alt=""><p class="bold-plain-text">Оценка жилых домов</p></div>
@@ -46,17 +38,17 @@
     <section class="about">
         <div class="about__container">
             <div class="container">
-                <div class="about__header">
+                <div class="about__header way--up">
                     <h2 class="about__title section-title"><span>О компании</span></h2>
                     <p class="about__desc plain-text">оценочная компания, которая уделяет особое внимание на качество и быстроту оказываемых услуг. Наши специалисты изучают рыночную стоимость каждого объекта и производят быструю и качественную оценку недвижимого имущества, движимого имущества и интеллектуальной собственности за кратчайшие сроки. Заказать у нас оценку просто, получить еще быстрее.</p>
                 </div>
 
                 <div class="about__wrapper">
-                    <div class="about__photo-block">
+                    <div class="about__photo-block way--left">
                         <img src="img/about-company.png" alt="">
                     </div>
 
-                    <div class="about__text-block">
+                    <div class="about__text-block way--right">
                         <div class="about__row">
                             <div class="about__text-title">
                                 <p class="bold-plain-text"><span class="section-title">1. </span>О наших специалистах</p>
@@ -105,13 +97,13 @@
     <section class="order-grade">
         <div class="order-grade__container">
             <div class="container">
-                <div class="order-grade__header">
+                <div class="order-grade__header way--up">
                     <div class=".order-grade__title main-title">Какие виды <span>оценки</span> <br> можно у нас заказать?</div>
                 </div>
 
                 <div class="order-grade__wrapper">
-                    <div class="order-grade__bold">Оценка недвижимого имущества</div>
-                    <div class="order-grade__row">
+                    <div class="order-grade__bold way--up">Оценка недвижимого имущества</div>
+                    <div class="order-grade__row way--up">
                         <div class="order-grade__col">
 
                             <div class="order-grade__desc">
@@ -144,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-grade__bold">Оценка интеллектуальной собственности</div>
-                    <div class="order-grade__row">
+                    <div class="order-grade__bold way--up">Оценка интеллектуальной собственности</div>
+                    <div class="order-grade__row way--up">
                         <div class="order-grade__col">
 
                             <div class="order-grade__desc">
@@ -177,8 +169,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-grade__bold">Оценка движимого имущества</div>
-                    <div class="order-grade__row">
+                    <div class="order-grade__bold way--up">Оценка движимого имущества</div>
+                    <div class="order-grade__row way--up">
 
                         <div class="order-grade__col">
                             <div class="order-grade__desc">

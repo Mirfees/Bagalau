@@ -1,5 +1,6 @@
 .menu-list {
   &__container {
+    position: relative;
     display: flex;
     gap: clamp(0.938rem, 0.313rem + 1.736vw, 1.875rem);
 

@@ -1,0 +1,49 @@
+.dropdown-menu {
+  position: relative;
+  &__list {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 53px;
+    gap: 15px;
+    margin-left: -20px;
+    padding: 25px;
+    background-color: $primaryColor;
+    overflow-y: scroll;
+    max-height: 70vh;
+
+    &.active {
+      display: flex;
+    }
+
+    @media (max-width: 992px) {
+      position: static;
+      margin-left: unset;
+    }
+  }
+
+  &__city {
+    overflow-y: hidden;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color:#fff;
+    transition: color .2s;
+    text-transform: uppercase;
+
+    @media (max-width: 992px) {
+      white-space: normal;
+    }
+    &:hover {
+      color: $accentColor;
+    }
+  }
+}
